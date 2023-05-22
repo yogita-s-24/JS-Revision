@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested</title>
+</head>
+
+<body>
+    <script>
+        //const jeeMain = 130;
+        //const jeeAdv = 120;
+
+        //if(jeeMain>120 && jeeAdv>100)
+        //{
+        // document.write("JEE-Main Cleared");
+        //if(jeeAdv>80)
+        // {
+        //  document.write("<br/> JEE-Adv Cleared");
+        // }
+        // else
+        //{
+        // document.write("<br/> JEE-Main Cleared and JEE-Adv Not Cleared");
+        // }
+        //}
+        // else
+        // {
+        //    document.write("Admission Rejected");
+        // }
+
+
+        const JEEMain = 120;
+        const JEEAdv = 120;
+
+        if (JEEMain > 90 && JEEAdv > 100) {
+            document.write("Your Cleared JEE-Main exam");
+
+            if (JEEMain > 90) {
+                document.write("</br> JEE-Adv Cleared");
+            }
+            else {
+                document.write("</br> JEE-Main Cleared and JEE-Adv Not Cleared")
+            }
+        }
+        else {
+            document.write("Addmiddion rejected");
+        }
+    </script>
+</body>
+
+</html>
