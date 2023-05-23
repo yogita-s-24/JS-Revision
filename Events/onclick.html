@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+    <style>
+        .special {
+            background-color: rgb(60, 124, 228);
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="item" onclick="sayHello()">Click Me🚀</button>
+    <button id="item1"onclick="sayHi()">Click Here🚀</button>
+
+    <script>
+        const ele = document.getElementById('item');
+        ele.className = "special";
+
+        const element = document.getElementById('item1');
+        element.className = "special";
+
+        function sayHello(){
+            alert("Don't touch me...❌")
+        }
+
+        function sayHi(){
+            alert("Are u sure!! To delete ur account. ")
+        }
+
+    </script>
+</body>
+
+</html>
