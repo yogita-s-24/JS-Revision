@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Count</h1>
+    <h1 id="cnt">0</h1>
+    <button onclick="inc()">INC</button>
+    <button onclick="dec()">DEC</button>
+
+    <script>
+        function inc(){
+        const ele = document.getElementById("cnt");
+        const qnt = parseInt(ele.innerHTML);
+        ele.innerHTML = qnt + 1;
+        }
+        function dec(){
+        const ele = document.getElementById("cnt");
+        const qnt = parseInt(ele.innerHTML);
+        if(qnt==1){
+            alert("Qut can be 1")
+        }
+        else{
+            ele.innerHTML = qnt - 1;
+        }
+        }
+    </script>
+</body>
+</html>

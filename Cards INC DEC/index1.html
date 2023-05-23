@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Count </h1>
+    <h1 id="cnt"> 0 </h1>
+    <button onclick="incC()">Increament</button>
+    <button onclick="decC()">Decrement</button>
+
+    <script>
+        function incC(){
+            const element = document.getElementById("cnt");
+            const qnt = parseInt(element.innerHTML );
+            element.innerHTML = qnt + 1 ;
+        }
+        function decC(){
+            const element = document.getElementById("cnt");
+            const qnt = parseInt(element.innerHTML);
+            if(qnt==1){
+            alert("qnt can be 1");
+            }
+            else{
+
+                element.innerHTML = qnt - 1;
+            }
+            
+        }
+    </script>
+</body>
+</html>

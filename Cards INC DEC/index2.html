@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >Count</h1>
+    <h1 id="count">0</h1>
+    <button onclick="Inc()">Increment</button>
+    <button onclick="Dec()">Decrement</button>
+
+    <script>
+        function Inc(){
+            const element = document.getElementById("count");
+            const quantity = parseInt(element.innerHTML);
+            element.innerHTML=quantity+1;
+        }
+        function Dec(){
+            const element = document.getElementById("count");
+            const quantity = parseInt(element.innerHTML);
+            if(quantity==1){
+                alert("Quantity can be 1");
+            }
+            else{
+                element.innerHTML=quantity-1;
+            }
+        }
+    </script>
+</body>
+</html>

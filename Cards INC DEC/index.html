@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 200px;
+            border: solid black 1px;
+            margin: 0 auto;
+        }
+       button{
+        display: block;
+        margin: 0 auto;
+       }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+     <img src="../Events/bulbon.png" alt="" height="200px">
+     <div>
+
+         <button onclick="countInc()">+</button>
+         <span class="text"id="quantity"> 0 </span>
+         <button onclick="countDec()">-</button>
+     </div>
+    </div>
+
+    <script>
+        function countInc(){
+            const quntElement = document.getElementById("quantity");
+            const qunt = parseInt(quntElement.innerHTML)
+            quntElement.innerHTML=qunt + 1;
+
+        }
+        function countDec(){
+            
+            const quntElement = document.getElementById("quantity");
+            const qunt = parseInt(quntElement.innerHTML)
+            if(qunt==1){
+                alert("Min quantity can be 1");
+            }
+            else{
+                quntElement.innerHTML=qunt - 1;
+
+            }
+         
+        }
+    </script>
+</body>
+</html>
