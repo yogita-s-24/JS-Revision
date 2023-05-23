@@ -14,18 +14,45 @@
         }
 
         const ans = areaRectangle(4 , 5);
-        document.write(ans);
+        document.write("Area of the square " +ans);
         
         document.write("<br/>");
-
+        
         function addition(x , y){
             const sum = x + y;
             return sum;
         }
-
+        
         const a = addition( 60 , 50);
-        document.write(a); 
+        document.write(`<h3>Addition of 60 + 50 = ${a}.</h3>`); 
+        
+        document.write("<br/>");
+        
+        function areaSquare(side){
+            const area = side * side;
+            return area;
+        }
+        const answer = areaSquare(10);
+        document.write(`<h3>Area of the square = ${answer}`) ;
+            
+            document.write("<br/>");
+            
+            function areaofTriangle(base,height){
+                const area = base * height;
+                return area;
+            }
+            const result = areaofTriangle(10 , 20);
+            document.write(`Area of the triangle is ${result}`);
 
+
+            document.write("<br>")
+            function substraction(P ,Q){
+                const sub = P - Q;
+                return sub;
+            }
+
+            const d = substraction(90 , 80);
+            document.write(`Subtaction of given two no = ${d}`)
     </script>
 </body>
 </html>
