@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .normal{
+            background-color: antiquewhite;
+            border:2px black solid;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            width: 700px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="item1">This is my first heading.</h1>
+    <h1 id="item2">This is my first heading.</h1>
+    <h1 id= "item3">This is my Third heading.</h1>
+
+    <script>
+        //to find id by using id seletor
+        const q = document.getElementById("item1");
+        console.log(q);
+
+        //to change the font color by using id seletor
+        const a = document.getElementById("item1");
+        a.style.color="red";
+
+        //to change the innerHtml content by using id seletor
+        const b = document.getElementById("item2");
+        b.innerHTML="Hi Im Yogita";
+
+        const ele = document.getElementById("item3");
+        ele.className = "normal";
+    </script>
+</body>
+</html>
