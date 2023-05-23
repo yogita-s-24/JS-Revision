@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conatiner">
+        <div class="value">
+            <input type="text" placeholder="Enter Value 1" id="val1">
+        </div>
+        <div class="value">
+            <input type="text" placeholder="Enter Value 2" id="val2">
+        </div>
+        <h3 class="sum" id="sum">Sum:</h3>
+       <button onclick="calSum()">Calculate</button>
+       <button onclick="resetSum()">Clear</button>
+       
+
+    </div>
+   
+
+
+    <script>
+function calSum(){
+   const a = document.getElementById("val1").value;
+   const b = document.getElementById("val2").value;
+
+   const Sum = parseInt(a) + parseInt(b);
+   document.getElementById("sum").innerHTML = "Sum : "+Sum;
+}
+
+function resetSum(){
+    document.getElementById("sum").innerHTML = "Sum : ";
+    document.getElementById("val1").value=" ";
+    document.getElementById("val2").value=" ";
+}
+    </script>
+</body>
+</html>

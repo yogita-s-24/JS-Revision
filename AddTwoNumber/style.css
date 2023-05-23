@@ -1,0 +1,19 @@
+.conatiner{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#val2{
+   margin-top: 10px;
+}
+.sum{
+    margin-top: 10px;
+    color:white;
+}
+button{
+    cursor: pointer;
+    margin-top: 10px;
+}
